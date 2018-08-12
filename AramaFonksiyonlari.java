@@ -1,17 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package javaapplication1;
+
+package BEO;
 
 /**
  *
- * @author buketecrin
+ * @author buketecrinozturk
  */
-public class AramaFonksiyonlari {
-//     int dizi[]={25,-1,3,2,32,1,7,17,0};
 
+    public class AramaFonksiyonlari {
+    //     int dizi[]={25,-1,3,2,32,1,7,17,0};
+    //-------------------LinearSearch----------------------
     public int linearSearch(int dizi[], int n ,int aranan){
        int i=0,  yedek=0;
        for(i=0; i<n; i++)
@@ -22,7 +19,7 @@ public class AramaFonksiyonlari {
        }
        return -1;
     }
-    
+    //-------------------binearySearch normal fonksiyon----------------------
     public int binearySearch(int dizi [], int n, int aranan){
         int sol=0; 
         int sag=n-1; 
@@ -39,7 +36,7 @@ public class AramaFonksiyonlari {
         return -1;
             
     }
-  
+    //-------------------binearySearch recursive fonksiyon----------------------
     public int r_binarySearch(int dizi [], int sol, int sag, int aranan){
         if(sag>1){
             int m = (int) sol+(sag-sol)/2;
